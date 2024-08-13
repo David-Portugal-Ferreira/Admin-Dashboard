@@ -10,15 +10,12 @@
     gap: 5px;
 }
 
-.wrapper>div {
-    background-color: bisque;
-}
-
 .sidebar {
     grid-column: 1;
     display: grid;
     grid-template-columns: minmax(250px, 300px);
     grid-row: 1 / 4;
+    background-color: rgb(142, 224, 251);
 }
 
 svg {
@@ -87,15 +84,15 @@ svg {
 .panel {
     grid-column: 2;
     grid-row: 1 / 5;
-    background-color: aqua;
     display: grid;
 }
 
 .nav-bar {
     grid-column: 1;
     grid-row: 1;
-    background-color: aqua;
+    background-color: white;
     display: grid;
+    box-shadow: inset;
 }
 
 .navbar-content {
@@ -115,6 +112,7 @@ svg {
     height: 25px;
     border-radius: 6px;
     border-style: none;
+    background-color: lightgray;
 }
 .notifications {
     align-self: center;
@@ -149,7 +147,7 @@ img {
     width: 85px;
     border-radius: 20px;
     border-style: none;
-    background-color: rgb(67, 208, 254);
+    background-color: rgb(142, 224, 251);
     color: white;
     font-size: 17px;
 }
@@ -157,28 +155,45 @@ img {
 .user-feed {
     grid-column: 1;
     grid-row: 2 / 5;
-    background-color: lightgreen;
+    background-color: lightgray;
     display: grid;
-    grid-template-columns: 2fr 2fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 
 .your-projects {
-    grid-column: 1 / 3;
-    grid-row: 1 / 5;
+    grid-column: 1;
+    grid-row: 1 / 3;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
-    margin: 20px;
+    margin: 30px;
 }
 .card {
+    display: flex;
     background-color: white;
+    border-radius: 5px;
+    height: 250px;
+}
+.card > p {
+    padding: 5px;
+}
+.color {
+    height: 100%;
+    width: 10px;
+    margin-right: 5px;
+    background-color: rgb(255, 208, 0);
 }
 
 .announcements {
-    grid-row: 1 / 3;
+    grid-column: 2;
+    grid-row: 1;
+    display: grid;
+    margin: 20px;
 }
-
 .trending {
-    grid-row: 3 / 5;
+    grid-column: 2;
+    grid-row: 2;
+    display: grid;
+    margin: 20px;
 }
