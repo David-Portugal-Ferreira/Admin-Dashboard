@@ -37,6 +37,7 @@ svg {
 }
 
 .sidebar-dashboard {
+    margin-top: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -80,7 +81,6 @@ svg {
 .sidebar svg {
     justify-self: center;
 }
-.sidebar p {}
 
 .panel {
     grid-column: 2;
@@ -92,10 +92,64 @@ svg {
     grid-column: 1;
     background-color: aqua;
     display: grid;
+    grid-template-rows: 1fr 1fr;
 }
+
+.navbar-content {
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 0.7fr 8fr 2fr 2fr 3fr;
+}
+.search-icon {
+    align-self: center;
+    justify-self: center;
+}
+.input-search {
+    align-self: center;
+}
+.input-search input{
+    width: 100%;
+    height: 25px;
+    border-radius: 6px;
+    border-style: none;
+}
+.notifications {
+    align-self: center;
+    justify-self: end;
+}
+.profile-picture {
+    align-self: center;
+    justify-self: center;
+}
+.user-name {
+    align-self: center;
+    justify-self: center;
+}
+img {
+    display: inline-block;
+    width: 75px;
+    height: 75px;
+}
+
 
 .user-content {
     grid-column: 1;
     background-color: lightgreen;
     display: grid;
+    grid-template-columns: 1fr 5fr 1fr 1fr 1fr;
+}
+.user-content div {
+    align-self: center;
+}
+.but-new, .but-upload, .but-share {
+    justify-self: center;
+}
+.but-new > button, .but-upload > button, .but-share > button {
+    height: 45px;
+    width: 85px;
+    border-radius: 20px;
+    border-style: none;
+    background-color: rgb(67, 208, 254);
+    color: white;
+    font-size: 17px;
 }
