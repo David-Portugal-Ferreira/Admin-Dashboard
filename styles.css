@@ -60,7 +60,14 @@ svg {
     grid-row: 1;
     display: grid;
 }
-
+.header-first-row {
+    display: grid;
+    grid-template-columns: 0.5fr 5fr .4fr 2fr 1.5fr;
+}
+.header-second-row {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr 1fr 1.5fr;
+}
 
 
 
@@ -71,4 +78,35 @@ svg {
     grid-row: 2 / 4;
     display: grid;
     grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr 3fr;
+}
+.projects {
+    grid-column: 1;
+    grid-row: 1;
+    align-self: center;
+}
+.projects-content {
+    grid-column: 1;
+    grid-row: 2 / 5;
+    background-color: blue;
+}
+.announcements {
+    grid-column: 2;
+    grid-row: 1;
+    align-self: center;
+}
+.announcements-content {
+    grid-column: 2;
+    grid-row: 2;
+    background-color: brown;
+}
+.trending {
+    grid-column: 2;
+    grid-row: 3;
+    align-self: center;
+}
+.trending-content {
+    grid-column: 2;
+    grid-row: 4;
+    background-color: turquoise;
 }
