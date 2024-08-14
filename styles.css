@@ -124,6 +124,8 @@ svg {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 .card {
     background-color: white;
