@@ -9,7 +9,7 @@ svg {
 
 .wrapper {
     display: grid;
-    grid-template-columns: 2fr 1fr 5fr;
+    grid-template-columns: 200px 1fr 5fr;
     grid-template-rows: 1fr 2fr 2fr;
 }
 
@@ -62,8 +62,19 @@ svg {
 }
 .header-first-row {
     display: grid;
-    grid-template-columns: 0.5fr 5fr .4fr 2fr 1.5fr;
+    grid-template-columns: 0.5fr 5fr .4fr .5fr 1.5fr;
+    align-content: center;
 }
+.header-first-row svg {
+    justify-self: end;
+    padding-right: 10px;
+}
+.header-first-row input {
+    border-radius: 10px;
+    border-style: none;
+    background-color: rgb(230, 230, 230);
+}
+
 .header-second-row {
     display: grid;
     grid-template-columns: 1fr 4fr 1fr 1fr 1.5fr;
