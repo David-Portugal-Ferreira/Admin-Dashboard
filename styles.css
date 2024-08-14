@@ -10,14 +10,14 @@ svg {
 .wrapper {
     display: grid;
     grid-template-columns: 200px 1fr 5fr;
-    grid-template-rows: 1fr 2fr 2fr;
+    _grid-template-rows: 1fr .5fr 2fr 2fr 2fr;
 }
 
 /*  SIDEBAR  */
 .dashboard-nav {
     background-color: aqua;
     grid-column: 1;
-    grid-row: 1 / 4;
+    grid-row: 1 / 6;
 }
 .dashboard-logo {
     margin-bottom: 25px;
@@ -102,10 +102,15 @@ svg {
 .feed {
     background-color: yellow;
     grid-column: 2 / 4;
-    grid-row: 2 / 4;
+    grid-row: 2 / 6;
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: 1fr 3fr 1fr 3fr;
+    _grid-template-rows: .5fr 3fr 1fr 3fr;
+}
+.projects,
+.announcements,
+.trending {
+    padding-left: 10px;
 }
 .projects {
     grid-column: 1;
@@ -114,8 +119,18 @@ svg {
 }
 .projects-content {
     grid-column: 1;
-    grid-row: 2 / 5;
+    grid-row: 2 / 6;
     background-color: blue;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    _grid-template-rows: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+.card {
+    background-color: white;
+    border-radius: 5px;
+    margin: 5px;
+    height: 250px;
 }
 .announcements {
     grid-column: 2;
@@ -129,8 +144,10 @@ svg {
 }
 .trending {
     grid-column: 2;
+    background-color: yellow;
     grid-row: 3;
     align-self: center;
+    margin-top: 200px;
 }
 .trending-content {
     grid-column: 2;
