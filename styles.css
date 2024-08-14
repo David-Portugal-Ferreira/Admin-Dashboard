@@ -64,6 +64,7 @@ svg {
     display: grid;
     grid-template-columns: 0.5fr 5fr .4fr .5fr 1.5fr;
     align-content: center;
+    margin-top: 19px;
 }
 .header-first-row svg {
     justify-self: end;
@@ -73,11 +74,26 @@ svg {
     border-radius: 10px;
     border-style: none;
     background-color: rgb(230, 230, 230);
+    height: 20px;
 }
 
 .header-second-row {
     display: grid;
     grid-template-columns: 1fr 4fr 1fr 1fr 1.5fr;
+    padding-top: 15px;
+    padding-bottom: 7px;
+}
+.header-second-row svg {
+    justify-self: center;
+    align-self: center;
+}
+.header-second-row button {
+    border-radius: 15px;
+    border-style: none;
+    width: 100px;
+    background-color: lightblue;
+    color: white;
+    font-size: 17px;
 }
 
 
